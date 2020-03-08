@@ -34,7 +34,7 @@ public class InsertSortTest {
 
             while (insertIndex >= 0 && insertValue < arr[insertIndex]) {
                 arr[insertIndex + 1] = arr[insertIndex];
-                insertIndex--;//???
+                insertIndex--;
             }
             arr[insertIndex + 1] = insertValue;
         }
