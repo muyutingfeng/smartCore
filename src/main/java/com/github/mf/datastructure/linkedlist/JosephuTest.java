@@ -22,9 +22,19 @@ class CircleSingleLinkedList {
     Boy first = null;
 
     /**
-     * 创建小孩单向环形链表
+     * 添加小孩节点
+     * 1：判断参数是否非法
+     * 2：创建辅助节点curBoy进行移动，
+     * 当节点为1时
+     *      first = boy;
+     *      first.next = first;
+     *      curBoy = first;
+     * 当节点为2时
+     *      curBoy.next = boy;
+     *      boy.next = first;
+     *      curBoy = boy;
      *
-     * @param nums 创建小孩的数量
+     * @param nums 创建的节点数量
      */
     public void addBoy(int nums) {
         if (nums < 1) {
